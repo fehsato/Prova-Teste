@@ -1,0 +1,13 @@
+{
+    "anuncios": [
+      {
+        "id": 1,
+        "name": "Anúncio de Sapatos",
+        "imagem": "sapato.com.br",
+        "produto": "Sapato",
+        "tipo": "Folders"
+
+      }
+      
+    ]
+  }
