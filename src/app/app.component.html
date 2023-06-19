@@ -1,0 +1,53 @@
+<div class="row">
+    <div class="col-8 m-auto">
+
+         <div class="mb-3">
+           <label for="name" class="form-label">Nome: </label>
+           <input type="text" formControlName="name" class="form-control" id="name" placeholder="Nome">
+         </div>
+         <div class="mb-3">
+           <label for="email" class="form-label">Imagem: </label>
+           <input type="text" formControlName="imagem" class="form-control" id="imagem" placeholder="Url da imagem">
+         </div>
+         <div class="mb-3">
+          <label for="produto" class="form-label">Produto: </label>
+          <input type="text" formControlName="produto" class="form-control" id="produto" placeholder="Prduto">
+        </div>
+        <div class="mb-3">
+          <label for="tipo" class="form-label">Tipo de Anúncio: </label>
+          <input type="text" formControlName="tipo" class="form-control" id="tipo" placeholder="Tipo de Anúncio desejado">
+        </div>
+         <div class="mb-3 d-flex justify-content-end">
+             <button class="btn btn-primary"  (click)="save()">Salvar</button> 
+         </div>
+
+    </div>
+ </div>
+ 
+ <table class="table table-striped">
+     <thead>
+       <tr>
+         <th scope="col">#</th>
+         <th scope="col">Name</th>
+         <th scope="col">Imagem</th>
+         <th scope="col">Produto</th>
+         <th scope="col">Tipo</th>
+         <th class="d-flex justify-content-end" scope="col">Opções</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr *ngFor="let anuncio of anuncios">
+         <th scope="row">{{anuncio.id}}</th>
+         <td>{{anuncio.name}}</td>
+         <td>{{anuncio.imagem}}</td>         
+         <td>{{anuncio.produto}}</td>     
+         <td>{{anuncio.tipo}}</td>     
+       </tr>
+     </tbody>
+ </table>
+ 
+ 
+ 
+ 
+ 
+ 
